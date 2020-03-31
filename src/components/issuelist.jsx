@@ -12,6 +12,7 @@ import {
 } from "bloomer";
 import "bulma/css/bulma.css";
 
+
 class IssueList extends Component {
   constructor(props) {
     super(props);
