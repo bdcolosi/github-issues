@@ -6,10 +6,10 @@ import {
   Title,
   Subtitle,
   Media,
-  Section,
-  Container,
   Box
 } from "bloomer";
+import {Link} from 'react-router-dom'
+
 import "bulma/css/bulma.css";
 
 
@@ -54,7 +54,7 @@ class IssueList extends Component {
                   <Box key={issue.url}>
                     <Title isSize={4}>{issue.title} </Title>
                     <Subtitle isSize={6}>
-                      {issue.url}
+                      <Link to="/issue/issue_number?">{issue.url}</Link>
                       <br />
                       <br />
                       {issue.body}
